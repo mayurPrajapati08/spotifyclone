@@ -1,0 +1,38 @@
+{
+    "title" : "Arijit Singh",
+    "type" : "Artist",
+    "image" : "songs/arjit/as.jpg",
+    "folder": "arjit",
+    "songs": [
+        {
+            "name": "Apna Bana Le - ",
+            "artist": "Arijit Singh",
+            "file": "Apna Bana Le - Arijit Singh.mp3"
+        },
+        {
+            "name": "Dhun - ",
+            "artist": "Arijit Singh",
+            "file": "Dhun - Arijit Singh.mp3"
+        },
+        {
+            "name": "Muskurane Ki Wajah - ",
+            "artist": "Arijit Singh",
+            "file": "Muskurane Ki Wajah - Arijit Singh.mp3"
+        },
+        {
+            "name": "Sapphire - ",
+            "artist": "Arijit Singh",
+            "file": "Sapphire - Arijit Singh.mp3"
+        },
+        {
+            "name": "Shayad - ",
+            "artist": "Arijit Singh",
+            "file": "Shayad - Arijit Singh.mp3"
+        },
+        {
+            "name": "Soulmate - ",
+            "artist": "Arijit Singh",
+            "file": "Soulmate - Arijit Singh.mp3"
+        }
+    ]
+}

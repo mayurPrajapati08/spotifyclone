@@ -1,0 +1,38 @@
+{
+    "title" : "A.R.Rahman",
+    "type" : "Artist",
+    "image" : "songs/rahman/cover.jpg",
+    "folder": "rahman",
+    "songs": [
+        {
+            "name": "Hosanna - ",
+            "artist": "A.R Rahman",
+            "file": "Hosanna - A.R Rahman.mp3"
+        },
+        {
+            "name": "Maahi Ve - ",
+            "artist": "A.R Rahman",
+            "file": "Maahi Ve - A.R Rahman.mp3"
+        },
+        {
+            "name": "Nee Singam Dhan - ",
+            "artist": "A.R Rahman",
+            "file": "Nee Singam Dhan - A.R Rahman.mp3"
+        },
+        {
+            "name": "Raanjhanna - ",
+            "artist": "A.R Rahman",
+            "file": "Raanjhanna - A.R Rahman.mp3"
+        },
+        {
+            "name": "Tere Bina - ",
+            "artist": "A.R Rahman",
+            "file": "Tere Bina - A.R Rahman.mp3"
+        },
+        {
+            "name": "Tum Tak - ",
+            "artist": "A.R Rahman",
+            "file": "Tum Tak - A.R Rahman.mp3"
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+/* ================= Responsive Design ================= */
+
+/* Medium screens: Tablets (720px to 1250px) */
+@media (max-width: 1250px) and (min-width: 720px) {
+
+    .container-head {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .search-bar {
+        width: 300px;
+        height: 45px;
+    }
+
+    .main-cont {
+        flex-direction: row;
+        margin: 0;
+        gap: 15px;
+    }
+
+    .left-side {
+        width: 30%;
+        position: relative;   /* no overlap */
+        height: auto;
+    }
+
+    .right-side {
+        width: 68%;
+        margin: 0;
+        position: relative;
+        height: auto;
+        padding: 10px;
+    }
+
+    .right-side .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .btm-foot {
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+/* Small screens: Mobile (below 720px) */
+@media (max-width: 720px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .container-head {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 200px;
+        height: 40px;
+    }
+
+    .search-bar input {
+        width: 120px;
+    }
+
+    .search-bar input::placeholder{
+        font-size:9px;
+    }
+
+    .right-header {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .main-cont {
+        flex-direction: column;
+        margin: 0;
+        width: 100vw;
+        gap: 15px;
+    }
+
+    .left-side {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90%;
+        position: relative;
+        height: 80vh;
+        box-sizing: border-box;
+    }
+
+    .left-side-footer{
+        height: 30vh;
+        padding-bottom: 10px;
+    }
+
+    .left-side .songlist ul{
+        padding: 10px 20px 20px 40px;
+        height: 36vh;
+        width: 80%;
+        overflow-y: scroll;
+    }
+
+    .right-side {
+        margin : 0 20px 20px 20px;
+        width: 90%;
+        position: relative;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .right-side .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+    .btm-foot {
+        width: 95vw;
+        height: 140px;
+        /* min-height: 100px; */
+        flex-direction: column;
+        position: sticky;
+        bottom: 0;
+        margin-bottom: 30px;
+        padding: 15px;
+        gap: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .btm-cont {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .player {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .seeker{
+        width:80vw;
+    }
+
+    .play-icons {
+        gap: 10px;
+    }
+}

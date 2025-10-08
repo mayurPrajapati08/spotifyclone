@@ -1,0 +1,38 @@
+{
+    "title" : "Anuv Jain",
+    "type" : "Artist",
+    "image" : "songs/anuv/cover.jpg",
+    "folder": "anuv",
+    "songs": [
+        {
+            "name": "Afsos - ",
+            "artist": "Anuv Jain",
+            "file": "Afsos - Anuv Jain.mp3"
+        },
+        {
+            "name": "Alag Aasmaan - ",
+            "artist": "Anuv Jain",
+            "file": "Alag Aasmaan - Anuv Jain.mp3"
+        },
+        {
+            "name": "Arz Kiya Hai - Anuv Jain",
+            "artist": "Arz Kiya Hai - Anuv Jain",
+            "file": "Arz Kiya Hai - Anuv Jain.mp3"
+        },
+        {
+            "name": "Baarishein - Anuv Jain",
+            "artist": "Baarishein - Anuv Jain",
+            "file": "Baarishein - Anuv Jain.mp3"
+        },
+        {
+            "name": "Husn - Anuv Jain",
+            "artist": "Husn - Anuv Jain",
+            "file": "Husn - Anuv Jain.mp3"
+        },
+        {
+            "name": "Jo Tum Mere Ho - ",
+            "artist": "Anuv Jain",
+            "file": "Jo Tum Mere Ho - Anuv Jain.mp3"
+        }
+    ]
+}

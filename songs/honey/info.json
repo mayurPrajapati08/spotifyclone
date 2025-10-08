@@ -1,0 +1,38 @@
+{
+    "title" : "Yo Yo Honey Singh",
+    "type" : "Artist",
+    "image" : "songs/honey/cover.jpg",
+    "folder": "honey",
+    "songs": [
+        {
+            "name": "Blue Eyes - ",
+            "artist": "Yo Yo Honey Singh",
+            "file": "Blue Eyes - Yo Yo Honey Singh.mp3"
+        },
+        {
+            "name": "Brown Rang - ",
+            "artist": "Yo Yo Honey Singh",
+            "file": "Brown Rang - Yo Yo Honey Singh.mp3"
+        },
+        {
+            "name": "Desi Kalakaar - ",
+            "artist": "Yo Yo Honey Singh",
+            "file": "Desi Kalakaar - Yo Yo Honey Singh.mp3"
+        },
+        {
+            "name": "Laal Pari - ",
+            "artist": "Yo Yo Honey Singh",
+            "file": "Laal Pari - Yo Yo Honey Singh.mp3"
+        },
+        {
+            "name": "Millionaire - ",
+            "artist": "Yo Yo Honey Singh",
+            "file": "Millionaire - Yo Yo Honey Singh.mp3"
+        },
+        {
+            "name": "Payal - ",
+            "artist": "Yo Yo Honey Singh",
+            "file": "Payal - Yo Yo Honey Singh.mp3"
+        }
+    ]
+}

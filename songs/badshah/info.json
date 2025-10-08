@@ -1,0 +1,38 @@
+{
+    "title" : "Badshah",
+    "type" : "Artist",
+    "image" : "songs/badshah/cover.jpg",
+    "folder": "badshah",
+    "songs": [
+        {
+            "name": "God Damn - ",
+            "artist": "Badshah",
+            "file": "God Damn - Badshah.mp3"
+        },
+        {
+            "name": "Kar Gayi Chull - ",
+            "artist": "Badshah",
+            "file": "Kar Gayi Chull - Badshah.mp3"
+        },
+        {
+            "name": "Naina - ",
+            "artist": "Badshah",
+            "file": "Naina - Badshah.mp3"
+        },
+        {
+            "name": "Players - ",
+            "artist": "Badshah",
+            "file": "Players - Badshah.mp3"
+        },
+        {
+            "name": "Proper Patola - ",
+            "artist": "Badshah",
+            "file": "Proper Patola - Badshah.mp3"
+        },
+        {
+            "name": "Tareefan - ",
+            "artist": "Badshah",
+            "file": "Tareefan - Badshah.mp3"
+        }
+    ]
+}
