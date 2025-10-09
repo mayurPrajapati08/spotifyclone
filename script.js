@@ -150,10 +150,10 @@ async function main() {
         if(currentsong.currentTime == currentsong.duration){
             // Get the filename of the currently playing song
             const currentSongFilename = currentsong.src.split("/").pop();
-            let fsongname = rep(currentSongFilename,"%20"," ");
+            // let fsongname = rep(currentSongFilename,"%20"," ");
 
             // Find the index of the current song in our songs array
-            const currentIndex = songs.findIndex(song => song.file === fsongname);
+            const currentIndex = songs.findIndex(song => song.file === currentSongFilename);
 
             // Check if a next song exists
             if (currentIndex !== -1 && currentIndex + 1 < songs.length) {
@@ -174,10 +174,10 @@ async function main() {
 
         // Get the filename of the currently playing song
         const currentSongFilename = currentsong.src.split("/").pop();
-        let fsongname = rep(currentSongFilename,"%20"," ");
+        // let fsongname = rep(currentSongFilename,"%20"," ");
 
         // Find the index of the current song in our songs array
-        const currentIndex = songs.findIndex(song => song.file === fsongname);
+        const currentIndex = songs.findIndex(song => song.file === currentSongFilename);
 
         // Check if a next song exists
         if (currentIndex !== -1 && currentIndex - 1 >= 0) {
@@ -191,10 +191,10 @@ async function main() {
 
         // Get the filename of the currently playing song
         const currentSongFilename = currentsong.src.split("/").pop();
-        let fsongname = rep(currentSongFilename,"%20"," ");
+        // let fsongname = rep(currentSongFilename,"%20"," ");
 
         // Find the index of the current song in our songs array
-        const currentIndex = songs.findIndex(song => song.file === fsongname);
+        const currentIndex = songs.findIndex(song => song.file === currentSongFilename);
 
         // Check if a next song exists
         if (currentIndex !== -1 && currentIndex + 1 < songs.length) {
