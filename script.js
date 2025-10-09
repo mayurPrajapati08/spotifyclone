@@ -42,7 +42,7 @@ async function getsongs(folder) {
         songurl.innerHTML = songurl.innerHTML + `<li>
                                                     <img src="svg icons/music.svg" style="filter: invert(1);" alt="">
                                                     <div class="info">
-                                                        <div class="songname">${song.name}</div>
+                                                        <div class="songname">${song.name}-</div>
                                                         <div class="artistname">${song.artist}</div>
                                                     </div>
                                                     <img src="svg icons/play-music.svg" alt="">
@@ -148,16 +148,17 @@ async function main() {
         document.querySelector(".circle").style.left = (currentsong.currentTime / currentsong.duration) * 100 + "%";
 
         if(currentsong.currentTime == currentsong.duration){
-            let index = songs.indexOf("s%5C"+currfolder+"%5C"+(currentsong.src.split("/").slice(-1)[0]));
- 
-            if((index + 1) >= 0){
-                let tp1 = rep(songs[index+1],"s%5C"," ");
-                let tp2 = rep(tp1,currfolder+"%5C","");
-                let tp3 = rep(tp2,".mp3","").split("-")[0] + "-";
-                let at = rep(songs[index+1],"s%5C"," ");
-                let at2 = rep(at,currfolder+"%5C","");
-                let at3 =  rep(at2,".mp3","").split("-")[1];
-                playmusic(tp3,at3);
+            // Get the filename of the currently playing song
+            const currentSongFilename = currentsong.src.split("/").pop();
+            let fsongname = rep(currentSongFilename,"%20"," ");
+
+            // Find the index of the current song in our songs array
+            const currentIndex = songs.findIndex(song => song.file === fsongname);
+
+            // Check if a next song exists
+            if (currentIndex !== -1 && currentIndex + 1 < songs.length) {
+                const nextSong = songs[currentIndex + 1];
+                playmusic(nextSong.name, nextSong.artist);
             }
         }
     })
@@ -171,36 +172,38 @@ async function main() {
     
     prev.addEventListener("click",()=>{
 
+        // Get the filename of the currently playing song
+        const currentSongFilename = currentsong.src.split("/").pop();
+        let fsongname = rep(currentSongFilename,"%20"," ");
 
-        let index = songs.indexOf("s%5C"+currfolder+"%5C"+(currentsong.src.split("/").slice(-1)[0]));
- 
-        if((index - 1) >= 0){
-            let tp1 = rep(songs[index-1],"s%5C"," ");
-            let tp2 = rep(tp1,currfolder+"%5C","");
-            let tp3 = rep(tp2,".mp3","").split("-")[0] + "-";
-            let at = rep(songs[index-1],"s%5C"," ");
-            let at2 = rep(at,currfolder+"%5C","");
-            let at3 =  rep(at2,".mp3","").split("-")[1];
-            playmusic(tp3,at3);
+        // Find the index of the current song in our songs array
+        const currentIndex = songs.findIndex(song => song.file === fsongname);
+
+        // Check if a next song exists
+        if (currentIndex !== -1 && currentIndex - 1 >= 0) {
+            const nextSong = songs[currentIndex - 1];
+            playmusic(nextSong.name, nextSong.artist);
         }
 
     })
 
-    next.addEventListener("click",()=>{
+    next.addEventListener("click", () => {
 
-        let index = songs.indexOf("s%5C"+currfolder+"%5C"+(currentsong.src.split("/").slice(-1)[0]));
-        
-        if((index + 1) > length){
-            let tp1 = rep(songs[index+1],"s%5C"," ");
-            let tp2 = rep(tp1,currfolder+"%5C","");
-            let tp3 = rep(tp2,".mp3","").split("-")[0] + "-";
-            let at = rep(songs[index+1],"s%5C"," ");
-            let at2 = rep(at,currfolder+"%5C","");
-            let at3 =  rep(at2,".mp3","").split("-")[1];
-            playmusic(tp3,at3);
+        // Get the filename of the currently playing song
+        const currentSongFilename = currentsong.src.split("/").pop();
+        let fsongname = rep(currentSongFilename,"%20"," ");
+
+        // Find the index of the current song in our songs array
+        const currentIndex = songs.findIndex(song => song.file === fsongname);
+
+        // Check if a next song exists
+        if (currentIndex !== -1 && currentIndex + 1 < songs.length) {
+            const nextSong = songs[currentIndex + 1];
+            playmusic(nextSong.name, nextSong.artist);
         }
 
     })
+
 
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
         currentsong.volume = parseInt(e.target.value)/100;
