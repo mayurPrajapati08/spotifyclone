@@ -67,7 +67,7 @@ const playmusic = (track, artist) => {
         currentsong.src = `songs/${currfolder}/${songFile.file}`;
         currentsong.play();
         play.src = "svg icons/player-pause.svg";
-        document.querySelector(".music-info").innerHTML = `${track} - ${artist}`;
+        document.querySelector(".music-info").innerHTML = `${track}  ${artist}`;
         
         // Set volume
         currentsong.volume = 0.2;
