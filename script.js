@@ -42,7 +42,7 @@ async function getsongs(folder) {
         songurl.innerHTML = songurl.innerHTML + `<li>
                                                     <img src="svg icons/music.svg" style="filter: invert(1);" alt="">
                                                     <div class="info">
-                                                        <div class="songname">${song.name}-</div>
+                                                        <div class="songname">${song.name}</div>
                                                         <div class="artistname">${song.artist}</div>
                                                     </div>
                                                     <img src="svg icons/play-music.svg" alt="">
