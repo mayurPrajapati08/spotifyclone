@@ -174,11 +174,12 @@ async function main() {
 
         // Get the filename of the currently playing song
         const currentSongFilename = currentsong.src.split("/").pop();
+        console.log(currentSongFilename);
         let fsongname = rep(currentSongFilename,"%20"," ");
-
+        console.log(fsongname);
         // Find the index of the current song in our songs array
         const currentIndex = songs.findIndex(song => song.file === fsongname);
-
+        console.log(currentIndex);
         // Check if a next song exists
         if (currentIndex !== -1 && currentIndex - 1 >= 0) {
             const nextSong = songs[currentIndex - 1];
