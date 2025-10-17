@@ -1,5 +1,3 @@
-console.log("starting javascript section....")
-
 
 let currentsong = new Audio;
 let songs;

@@ -8,6 +8,9 @@
     <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+
+    import { SpeedInsights } from "@vercel/speed-insights/next";
+
 </head>
 
 <body>
@@ -188,6 +191,11 @@
 
 
     <script src="script.js"></script>
+    <script>
+        window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+    
 </body>
 
 </html>
