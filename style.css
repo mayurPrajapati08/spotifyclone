@@ -64,6 +64,10 @@ body {
     cursor: pointer
 }
 
+.links-sp button:hover,span:hover {
+    text-decoration: underline 2px;
+}
+
 .partision-upward{
 font-size: 30px;
 }
